@@ -1,7 +1,7 @@
 package Circle.entity;
 
 
-public class Circle implements Shape {
+public class Circle {
     private Point center;
     private double radius;
 
@@ -21,10 +21,9 @@ public class Circle implements Shape {
         return radius;
     }
 
-
-    public Circle(double radius, Point center){
-        this.radius = checkRadius(radius);
+    public Circle(Point center, double radius){
         this.center = center;
+        this.radius = checkRadius(radius);
     }
 
     private double checkRadius(double radius){
